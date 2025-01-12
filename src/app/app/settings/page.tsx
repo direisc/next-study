@@ -17,10 +17,10 @@ import {
   UpdateEmailForm,
   UpdatePasswordForm,
 } from "./components"
-import { AuthCard } from "@/components/auth-card"
 import Link from "next/link"
 import { encodeBase64 } from "@oslojs/encoding"
 import { Button } from "@/components/ui/button"
+import { AuthCard } from "@/components/auth-card"
 
 export default async function Page() {
   if (!globalGETRateLimit()) {

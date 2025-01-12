@@ -29,12 +29,12 @@ export default async function Page() {
   const credentialUserId = new Uint8Array(8)
   bigEndian.putUint64(credentialUserId, BigInt(user.id), 0)
   return (
-      <RegisterPasskeyForm
-        encodedCredentialIds={credentials.map((credential) =>
-          encodeBase64(credential.id)
-        )}
-        user={user!}
-        encodedCredentialUserId={encodeBase64(credentialUserId)}
-      />
+    <RegisterPasskeyForm
+      encodedCredentialIds={credentials.map((credential) =>
+        encodeBase64(credential.id)
+      )}
+      user={user!}
+      encodedCredentialUserId={encodeBase64(credentialUserId)}
+    />
   )
 }

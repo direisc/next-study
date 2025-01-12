@@ -10,7 +10,7 @@ import { createChallenge } from "@/lib/client/webauthn"
 
 import { loginAction, loginWithPasskeyAction } from "./actions"
 import Link from "next/link"
-import { AuthCard } from "../components"
+import { AuthCard } from "@/components/auth-card"
 
 const initialState = {
   message: "",

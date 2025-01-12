@@ -1,3 +1,3 @@
 export const CONSTANTS = {
-  APP_NAME: 'Acme Inc.'
+  APP_NAME: "Acme Inc.",
 }

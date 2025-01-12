@@ -1,6 +1,6 @@
 import { GalleryVerticalEnd } from "lucide-react"
 import Link from "next/link"
-import { Button } from '../components/ui/button'
+import { Button } from "@/components/ui/button"
 
 export default async function Home() {
   return (
@@ -12,7 +12,9 @@ export default async function Home() {
           </div>
           Acme Inc. (Landing Page)
         </a>
-        <Link href="/app"><Button>Go to app</Button></Link>
+        <Link href="/app">
+          <Button>Go to app</Button>
+        </Link>
       </div>
     </div>
   )

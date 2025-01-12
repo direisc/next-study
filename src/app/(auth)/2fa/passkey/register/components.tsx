@@ -6,10 +6,10 @@ import { useActionState, useState } from "react"
 import { registerPasskeyAction } from "./actions"
 
 import type { User } from "@/lib/server/user"
-import { AuthCard } from "../../../components"
-import { Label } from "../../../../../components/ui/label"
-import { Input } from "../../../../../components/ui/input"
-import { Button } from "../../../../../components/ui/button"
+import { AuthCard } from "@/components/auth-card"
+import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
 
 const initialRegisterPasskeyState = {
   message: "",
