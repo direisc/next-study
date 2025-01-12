@@ -12,6 +12,7 @@ import {
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { AuthCard } from '@/components/auth-card'
 
 const initialUpdatePasswordState = {
   message: "",
@@ -145,11 +146,7 @@ export function SecurityKeyCredentialListItem(props: {
 export function RecoveryCodeSection(props: { recoveryCode: string }) {
   const [recoveryCode, setRecoveryCode] = useState(props.recoveryCode)
   return (
-    <section className="grid gap-6">
-      <h1 className="font-semibold leading-none tracking-tight text-xl">
-        Recovery code
-      </h1>
-      <p>Your recovery code is: {recoveryCode}</p>
+    <AuthCard title='Recovery code' description={`Your recovery code is: ${recoveryCode}`}>
       <Button
         className="w-full"
         onClick={async () => {
@@ -161,6 +158,6 @@ export function RecoveryCodeSection(props: { recoveryCode: string }) {
       >
         Generate new code
       </Button>
-    </section>
+    </AuthCard>
   )
 }
