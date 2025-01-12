@@ -10,6 +10,15 @@
     "prettier": "prettier . --write"
   },
   "dependencies": {
+    "@node-rs/argon2": "^2.0.2",
+    "@oslojs/binary": "^1.0.0",
+    "@oslojs/crypto": "^1.0.1",
+    "@oslojs/encoding": "^1.1.0",
+    "@oslojs/jwt": "^0.3.0",
+    "@oslojs/otp": "^1.1.0",
+    "@oslojs/webauthn": "^1.0.0",
+    "@pilcrowjs/db-query": "^0.0.2",
+    "@pilcrowjs/object-parser": "^0.0.4",
     "@radix-ui/react-avatar": "^1.1.2",
     "@radix-ui/react-collapsible": "^1.1.2",
     "@radix-ui/react-dialog": "^1.1.4",
@@ -18,6 +27,7 @@
     "@radix-ui/react-separator": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-tooltip": "^1.1.6",
+    "better-sqlite3": "^11.7.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
@@ -25,10 +35,12 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "uqr": "^0.1.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/better-sqlite3": "^7.6.12",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

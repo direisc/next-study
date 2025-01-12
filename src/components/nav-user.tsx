@@ -9,11 +9,7 @@ import {
   Sparkles,
 } from "lucide-react"
 
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,6 +25,9 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
+
+import { LogoutButton } from "@/app/(auth)/components"
+import Link from "next/link"
 
 export function NavUser({
   user,
@@ -89,8 +88,13 @@ export function NavUser({
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
               <DropdownMenuItem>
-                <BadgeCheck />
-                Account
+                <Link
+                  href="/settings"
+                  className="w-full flex items-center gap-2 [&>svg]:size-4 [&>svg]:shrink-0"
+                >
+                  <BadgeCheck />
+                  Account
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <CreditCard />
@@ -103,8 +107,10 @@ export function NavUser({
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <LogOut />
-              Log out
+              <LogoutButton>
+                <LogOut />
+                Log out
+              </LogoutButton>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
